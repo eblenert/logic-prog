@@ -1,0 +1,13 @@
+(defun prim (l)
+    (if (atom (car l))
+        (car l)
+        (prim (cdr l))
+    )
+)
+
+(defun prim-2 (l)
+    (if (listp (car l))
+        (prim-2 (car l))
+        (prim l)
+    )
+)

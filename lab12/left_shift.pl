@@ -1,0 +1,1 @@
+left_shift([H|T], K):-append(T, [H], K).
